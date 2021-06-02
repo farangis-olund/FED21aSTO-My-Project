@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R&D</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/flex.css">
     <link rel="stylesheet" type="text/css" href="css/myStyle.css">
-
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -16,18 +18,29 @@
         <!-- header logo and main buttons (home, about, contact) -->
 
         <header class="header header-flex">
-            <section class="home">Home</section>
-            <section class="logo">Logo</section>
-            <section class="about">About</section>
-            <section class="contact">Contact</section>
-            <section class="basket">basket</section>
+            <section class="about">
+                <a href="about.html">Om</a> </section>
+            <section class="contact">
+                <a href="contact.html">Kontakta oss</a></section>
+            <section class="logo"> R&D</section>
+            <section class="basket"><i class="fa fa-cart-plus"></i></section>
         </header>
 
         <!-- search and information block -->
 
         <div class="searchInfoBoxes">
-            <section class="searchBox">Search</section>
-            <section class="infoBox">Info</section>
+            <section class="searchBox">
+                <form>
+                    <input class="form-control" placeholder="Sok...">
+                </form>
+            </section>
+            <section class="infoBox">
+                <h3>Om butiken</h3>
+                <p>R&D Hem Deko® är en webbutik för heminredning baserat i Sverige. Det är en butik som säljer unika produkter som hör till dekor, (textilier, prydnader, kuddar, gardiner, etc) inte bara på den svenska marknaden utan också på den globala
+                    marknaden.
+                </p>
+                <p>På R&D Hem Deko® kommer vår kunds bästa att komma först och allt vi gör kommer att styras av våra värderingar och yrkesetik. Vi kommer att se till att vi ansvarar enligt högsta standard genom att uppfylla våra kunders behov exakt och fullständigt.</p>
+            </section>
 
         </div>
 
@@ -44,18 +57,19 @@
         <!-- main content about products -->
 
         <main class="main content-container-flex">
-            <section class="content-section1 content-flex">content section1</section>
-            <section class="content-section2 content-flex">content section2</section>
-            <section class="content-section3 content-flex">content section3</section>
-            <section class="content-section4 content-flex">content section4</section>
+            <section class="content-section1 content-flex "><img src="assets/img/section1.jpg" alt="pic 1"></section>
+            <section class="content-section2 content-flex "> <img src="assets/img/section2.jpg" alt="pic 2"></section>
+            <section class="content-section3 content-flex"><img src="assets/img/section3.jpg" alt="pic 3"></section>
+            <section class="content-section4 content-flex"><img src="assets/img/section4.jpg" alt="pic 4"></section>
 
         </main>
         <!-- insparation block -->
 
-        <div class="insparationBoxes">
-            <section class="insparationBox1">Box1</section>
-            <section class="insparationBox2">Box2</section>
-            <section class="insparationBox3">Box3</section>
+        <div class="insparationBoxes insparation-flex">
+            <h5 class="insparationText insparation-content-flex">Insparation</h5>
+            <section class="insparationBox1 insparation-content-flex">Box1</section>
+            <section class="insparationBox2 insparation-content-flex">Box2</section>
+            <section class="insparationBox3 insparation-content-flex">Box3</section>
         </div>
 
         <!-- news block -->

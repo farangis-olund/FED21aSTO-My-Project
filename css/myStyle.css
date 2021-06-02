@@ -7,11 +7,7 @@ body {
     background-size: 90%;
 }
 
-.header,
 .footer,
-.searchInfoBoxes,
-.searchBox,
-.infoBox,
 .insparationBox1,
 .insparationBox2,
 .insparationBox3,
@@ -34,19 +30,62 @@ body {
 .header-flex {
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: stretch;
 }
 
 .header>section {
-    font-size: 14px;
-    margin: 5px;
-    height: 20px;
-    border-style: solid;
-    border-color: #EE8070;
+    margin-right: 10px;
+    /* padding: 10px; */
 }
 
-.header-flex>.button4 {
-    margin-left: auto;
+.logo {
+    font-size: 40px;
+    align-self: center;
+    color: #c74a37;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header-flex>.basket {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 48px;
+}
+
+.form-control {
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #EE8070;
+    border-radius: 2px;
+}
+
+.header-flex>.about,
+.contact {
+    margin-left: 0;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+a {
+    color: grey;
+}
+
+a::placeholder {
+    color: black;
+}
+
+.infoBox>p {
+    font-style: italic;
+    color: rgba(100, 98, 98, 0.904);
 }
 
 .main {
@@ -69,19 +108,43 @@ body {
 }
 
 .searchInfoBoxes {
-    grid-template-rows: [searchBox] 30% [infoBox] 70%[end];
+    grid-template-rows: [searchBox] 20% [infoBox] 80%[end];
     grid-area: searchInfoBoxes;
     display: grid;
-    height: 150px;
+    height: 200px;
     gap: 2%;
     text-align: center;
 }
 
+.infoBox {
+    padding: 20px, 20px;
+}
+
 .insparationBoxes {
-    grid-template-columns: [insparationBox1] auto [insparationBox2] auto [insparationBox3] auto [end];
+    /* grid-template-columns: [insparationBox1] 100% [insparationBox2] auto [insparationBox3] auto [insparationBox4] auto [end]; */
     grid-area: insparationBoxes;
     display: grid;
     gap: 2%;
+}
+
+.insparation-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    flex-grow: 1;
+}
+
+.insparationBoxes>section {
+    height: 150px;
+}
+
+.insparationText {
+    width: 100%;
+    height: 15px;
+}
+
+.insparation-content-flex {
+    flex: 1 1 auto;
 }
 
 .newsBoxes {
@@ -126,9 +189,8 @@ body {
 
 .main>section {
     width: 265px;
-    height: 65px;
+    height: 240px;
     margin: 5px;
-    border: 1px solid #EE8070;
     background-color: #F9D6C0;
 }
 
