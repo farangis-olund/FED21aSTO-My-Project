@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/12_col.gif) center top repeat-y;
+    background-size: 90%;
+}
+
+.footer,
+.insparationBox1,
+.insparationBox2,
+.insparationBox3,
+.newsBoxes,
+.newsBox,
+.subscribeBox,
+.footer1,
+.footer2,
+.footer3,
+.footer4 {
+    border: 1px solid #EE8070;
+    padding: 10px;
+}
+
+.header {
+    grid-area: header;
+    height: 70px;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+}
+
+.header>section {
+    margin-right: 10px;
+    /* padding: 10px; */
+}
+
+.logo {
+    font-size: 40px;
+    align-self: center;
+    color: #c74a37;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header-flex>.basket {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 48px;
+}
+
+.form-control {
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #EE8070;
+    border-radius: 2px;
+}
+
+.header-flex>.about,
+.contact {
+    margin-left: 0;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+a {
+    color: grey;
+}
+
+a::placeholder {
+    color: black;
+}
+
+.infoBox>p {
+    font-style: italic;
+    color: rgba(100, 98, 98, 0.904);
+}
+
+.main {
+    grid-area: content;
+    display: grid;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #F9D6C0;
+    /* height: 150px; */
+    border: 1px solid #EE8070;
+}
+
+.sidebar-flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.searchInfoBoxes {
+    grid-template-rows: [searchBox] 20% [infoBox] 80%[end];
+    grid-area: searchInfoBoxes;
+    display: grid;
+    height: 200px;
+    gap: 2%;
+    text-align: center;
+}
+
+.infoBox {
+    padding: 20px, 20px;
+}
+
+.insparationBoxes {
+    /* grid-template-columns: [insparationBox1] 100% [insparationBox2] auto [insparationBox3] auto [insparationBox4] auto [end]; */
+    grid-area: insparationBoxes;
+    display: grid;
+    gap: 2%;
+}
+
+.insparation-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    flex-grow: 1;
+}
+
+.insparationBoxes>section {
+    height: 150px;
+}
+
+.insparationText {
+    width: 100%;
+    height: 15px;
+}
+
+.insparation-content-flex {
+    flex: 1 1 auto;
+}
+
+.newsBoxes {
+    grid-template-columns: [newsBox] auto [subscribeBox] auto [end];
+    grid-area: newsBoxes;
+    display: grid;
+    gap: 2%;
+}
+
+.footer>section {
+    background-color: #faa699;
+}
+
+.footer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: footer;
+    display: grid;
+    gap: 2%;
+    padding: 0.5%;
+    height: 112px;
+}
+
+.container {
+    width: 89%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header " "searchInfoBoxes searchInfoBoxes searchInfoBoxes searchInfoBoxes" "sidebar content content content" "insparationBoxes insparationBoxes insparationBoxes insparationBoxes" "newsBoxes newsBoxes newsBoxes newsBoxes" "footer footer footer footer";
+    gap: 2%;
+}
+
+.content-container-flex {
+    /* height: 150px; */
+    border: 1px solid #EE8070;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    background-color: #F9D6C0;
+    flex-grow: 1;
+}
+
+.main>section {
+    width: 265px;
+    height: 240px;
+    margin: 5px;
+    background-color: #F9D6C0;
+}
+
+.content-flex {
+    flex: 1 1 auto;
+}
+
+
+/* Breda desktopskärmar */
+
+@media screen and (max-width: 960px) {
+    .boxes {
+        grid-template-columns: [box1] 23% [box2] auto [box3] 23% [end];
+    }
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "header header header " "boxes boxes boxes" "content content sidebar " "footer footer footer";
+    }
+}
+
+
+/* Tablets såsom Ipad */
+
+@media screen and (max-width: 768px) {
+    .boxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "header header " "boxes boxes " "content sidebar " "footer footer";
+    }
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        height: 210px;
+    }
+}
+
+
+/* Mobiltelefoner */
+
+@media screen and (max-width: 600px) {
+    .boxes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "header " "boxes " "content" " sidebar " "footer";
+    }
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+        height: 440px;
+    }
+}
