@@ -37,10 +37,12 @@ body {
     align-items: center;
 }
 
-button {
-    font-size: 10px;
+.header>section {
+    font-size: 14px;
     margin: 5px;
-    height: 15px;
+    height: 20px;
+    border-style: solid;
+    border-color: #EE8070;
 }
 
 .header-flex>.button4 {
