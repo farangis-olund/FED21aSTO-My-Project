@@ -15,16 +15,24 @@
 
     <div class="container">
 
-        <!-- header logo and main buttons (home, about, contact) -->
+        <!-- header Part with logo  (about, contact) -->
 
         <header class="header header-flex">
-            <section class="about">
-                <a href="about.html">Om</a> </section>
-            <section class="contact">
-                <a href="contact.html">Kontakta oss</a></section>
-            <section class="logo"> R&D</section>
-            <section class="basket"><i class="fa fa-cart-plus"></i></section>
+            <ul class="menu">
+                <li class="menu-item-1">
+                    <a href="about.html">Om</a>
+                    <a href="contact.html">Kontakta oss</a>
+                </li>
+                <li class="menu-item-2">
+                    <span class="logo"> R&D</span>
+                </li>
+                <li class="menu-item-3">
+                    <i class="fa fa-cart-plus"></i>
+                </li>
+            </ul>
+
         </header>
+
 
         <!-- search and information block -->
 
@@ -36,27 +44,76 @@
             </section>
             <section class="infoBox">
                 <h3>Om butiken</h3>
-                <p>R&D Hem Deko® är en webbutik för heminredning baserat i Sverige. Det är en butik som säljer unika produkter som hör till dekor, (textilier, prydnader, kuddar, gardiner, etc) inte bara på den svenska marknaden utan också på den globala
-                    marknaden.
-                </p>
-                <p>På R&D Hem Deko® kommer vår kunds bästa att komma först och allt vi gör kommer att styras av våra värderingar och yrkesetik. Vi kommer att se till att vi ansvarar enligt högsta standard genom att uppfylla våra kunders behov exakt och fullständigt.</p>
+                <p>R&D Hem Deko® är en webbutik för heminredning baserat i Sverige. Det är en butik som säljer unika produkter som hör till dekor inte bara på den svenska marknaden utan också på den globala marknaden. Vår kunds bästa att komma först och
+                    allt vi gör kommer att styras av våra värderingar och yrkesetik. Vi kommer att se till att vi ansvarar enligt högsta standard genom att uppfylla våra kunders behov exakt och fullständigt.</p>
+
             </section>
+
+        </div>
+
+        <!-- main category for product -->
+        <div class="main-category">
+            <ul class="category">
+                <li>
+                    <a href="#">Poster</a>
+                </li>
+                <li>
+                    <a href="#">Kuddar</a>
+                </li>
+                <li>
+                    <a href="#">Mattor</a>
+                </li>
+
+                <li>
+                    <a href="#">Dekorationer</a>
+                </li>
+            </ul>
 
         </div>
 
         <!-- main content about products -->
 
         <main class="main content-container-flex">
-            <section class="content-section1 content-flex "><img src="assets/img/section1.jpg" alt="pic 1"></section>
-            <section class="content-section2 content-flex "> <img src="assets/img/section2.jpg" alt="pic 2"></section>
-            <section class="content-section3 content-flex"><img src="assets/img/section3.jpg" alt="pic 3"></section>
-            <section class="content-section4 content-flex"><img src="assets/img/section4.jpg" alt="pic 4"></section>
+            <section class="content-section1 content-flex ">
+                <img src="assets/img/section1.jpg" alt="pic 1">
+                <div class="text-block">
+                    <h3>Poster</h3>
+                    <p>What a beautiful sunrise</p>
+                    <a href="product.html">Shoppa nu</a>
+
+                </div>
+            </section>
+
+            <section class="content-section2 content-flex ">
+                <img src="assets/img/section2.jpg" alt="pic 2">
+                <div class="text-block">
+                    <h3>Kuddar</h3>
+                    <p>What a beautiful sunrise</p>
+                    <a href="product.html">Shoppa nu</a>
+                </div>
+            </section>
+            <section class="content-section3 content-flex">
+                <img src="assets/img/section3.jpg" alt="pic 3">
+                <div class="text-block">
+                    <h3>Mattor</h3>
+                    <p>What a beautiful sunrise</p>
+                    <a href="product.html">Shoppa nu</a>
+                </div>
+            </section>
+            <section class="content-section4 content-flex">
+                <img src="assets/img/section4.jpg" alt="pic 4">
+                <div class="text-block">
+                    <h3>Dekorationer</h3>
+                    <p>What a beautiful sunrise</p>
+                    <a href="product.html">Shoppa nu</a>
+                </div>
+            </section>
 
         </main>
         <!-- insparation block -->
 
         <div class="insparationBoxes insparation-flex">
-            <h5 class="insparationText insparation-content-flex">Insparation</h5>
+            <h3 class="insparationText insparation-content-flex">Insparation</h3>
             <section class="insparationBox1 insparation-content-flex">Box1</section>
             <section class="insparationBox2 insparation-content-flex">Box2</section>
             <section class="insparationBox3 insparation-content-flex">Box3</section>
@@ -66,18 +123,25 @@
 
         <div class="newsBoxes">
             <section class="newsBox">News</section>
-            <section class="subscribeBox">Subscribe</section>
+            <section class="subscribeBox subscribeBox-flex">
+
+                <div class="subscribeText">Prenumerera</div>
+                <div id="inputBox">
+                    <form>
+                        <input class="inputBox form-control" placeholder="Skriv in din e-mail...">
+                    </form>
+                </div>
+            </section>
         </div>
 
         <!-- footer  logo information -->
 
-        <footer class="footer">
+        <footer id="footer" class="footer">
             <section class="footer1">Section footer1</section>
             <section class="footer2">Section footer2</section>
             <section class="footer3">Section footer3</section>
             <section class="footer4">Section footer4</section>
         </footer>
-
     </div>
 
 </body>
