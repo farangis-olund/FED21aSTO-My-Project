@@ -2,6 +2,15 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        /* font-family: 'Suez One', serif;
+         */
+        font-family: 'Cinzel Decorative', cursive;
+        */
+        /* src: url('../assets/fonts/Crete_Round/CreteRound-Italic.ttf') format('truetype'), url('../assets/fonts/Crete_Round/CreteRound-Regular.ttf') format('truetype');
+        /* src: url('../assets/fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf') format('truetype'), url('../assets/fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf') format('truetype'), url('../assets/fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf') format('truetype');
+         */
+        font-weight: normal;
+        font-style: normal;
     }
     
     body {
@@ -34,10 +43,26 @@
         font-size: 30px;
     }
     
-    .category {
+    .main-banner {
+        grid-area: main-banner;
+    }
+    
+    .carousel {
+        width: 100%;
+    }
+    
+    .carousel-items {
+        display: none;
+    }
+    
+    .active {
+        display: block;
+    }
+    
+    .category,
+    .list-of-sub {
         width: 100%;
         padding-left: 0px;
-        text-align: center;
     }
     
     .category li {
@@ -48,9 +73,22 @@
         font-weight: bolder;
     }
     
-    .category li a {
+    .list-of-sub li {
+        list-style-type: none;
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    
+    .category li a,
+    .list-of-sub li a {
         text-decoration: none;
         color: black;
+    }
+    
+    .dn {
+        display: none;
     }
     
     .insparationBox1,
@@ -71,7 +109,9 @@
     }
     
     .main-category {
+        width: 100%;
         grid-area: main-category;
+        text-align: center;
     }
     
     .header-flex {
@@ -223,7 +263,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: "header header header header " "searchInfoBoxes searchInfoBoxes searchInfoBoxes searchInfoBoxes" "main-category main-category main-category main-category" "content content content content" "insparationBoxes insparationBoxes insparationBoxes insparationBoxes" "newsBoxes newsBoxes newsBoxes newsBoxes" "footer footer footer footer";
+        grid-template-areas: "header header header header " "searchInfoBoxes searchInfoBoxes searchInfoBoxes searchInfoBoxes" "main-banner main-banner main-banner main-banner" "main-category main-category main-category main-category" "content content content content" "insparationBoxes insparationBoxes insparationBoxes insparationBoxes" "newsBoxes newsBoxes newsBoxes newsBoxes" "footer footer footer footer";
         gap: 2%;
     }
     
@@ -236,13 +276,44 @@
     
     .main>section {
         position: relative;
-        width: 400px;
+        width: 410px;
         height: 300px;
-        margin: 10px;
+        padding-top: 10px;
+    }
+    
+    .content-section1,
+    .content-section3 {
+        padding-right: 10px;
     }
     
     .content-flex {
         flex: 1 1 auto;
+    }
+    /* Fading animation */
+    
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
     }
     
     #footer {
