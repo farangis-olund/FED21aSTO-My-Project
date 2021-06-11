@@ -1,10 +1,11 @@
 // main category sub category
 
 $(document).on("click", ".show-sub-category", function() {
-    var sub = $(this).find(".list-of-sub").clone();
-    sub.removeClass("dn");
-    $(".sub-category").html(sub[0].outerHTML);
+    $(".list-of-sub").hide();
+    $(this).find(".list-of-sub").toggle("slow");
+
 });
+
 
 // carousel script
 
@@ -25,5 +26,21 @@ function showSlides() {
     }
     slides[slideIndex - 1].classList.add('active');
 
-    setTimeout(showSlides, 3000); // 5 sec
+    setTimeout(showSlides, 5000); // 5 sec
 }
+// search function
+
+$(document).on("click", ".search", function() {
+    $(".search-area").toggle("slow");
+});
+
+// category menu dropdown
+
+$(document).on("click", ".menu-line", function() {
+    var sw = $(".main-category").css("left");
+    if (sw == "-2000px") {
+        $(".main-category").css("left", "0%");
+    } else {
+        $(".main-category").css("left", "-2000px");
+    }
+});
