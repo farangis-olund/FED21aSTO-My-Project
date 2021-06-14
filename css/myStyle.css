@@ -8,10 +8,18 @@
             font-style: normal;
         }
         
+        p {
+            font-family: 'Play', sans-serif;
+        }
+        
         body {
             background: url(../img/12_col.gif) center top repeat-y;
             background-size: 90%;
             background-color: rgb(252, 248, 247);
+        }
+        
+        .logo>a:hover {
+            text-decoration: none;
         }
         
         html {
@@ -182,8 +190,8 @@
             margin-right: 10px;
         }
         
-        .logo {
-            flex-grow: 1;
+        .logo>a {
+            /* flex-grow: 1; */
             font-weight: bolder;
             text-shadow: 2px 2px 3px rgb(141, 137, 137);
             align-self: center;
@@ -193,10 +201,12 @@
         
         .first-part {
             font-size: 40px;
+            font-family: 'Salsa', cursive;
         }
         
         #second-part {
             font-size: 20px;
+            font-family: 'Salsa', cursive;
         }
         
         .form-control {
@@ -226,21 +236,18 @@
         }
         
         a:hover {
-            color: rgb(154, 138, 240);
-        }
-        
-        .show-sub-category>a:hover {
-            background-color: rgb(201, 197, 197);
+            opacity: 0.7;
         }
         
         a::placeholder {
             color: rgb(201, 197, 197);
         }
         
-        .infoBox>p {
+        .infoBox>h4 {
             padding-right: 50px;
             padding-left: 50px;
             font-family: 'Play', sans-serif;
+            font-weight: normal;
         }
         
         .main {
@@ -310,7 +317,6 @@
         .newsBox>p {
             padding-right: 20px;
             text-align: left;
-            font-family: 'Play', sans-serif;
         }
         
         .subscribeBox-flex {
