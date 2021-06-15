@@ -58,63 +58,33 @@
 
         </header>
 
-
-
-
         <script src="js/main.js "></script>
-
-        <!-- main category for product -->
-
-        <div class="main-category ">
-            <ul class="category ">
-                <li class="show-sub-category ">
-                    <a href="javascript:void(0) ">Kuddar</a>
-
-                    <ul class="list-of-sub dn ">
-                        <li><a href="# "> Kuddar - sub 1</a></li>
-                        <li><a href="# "> Kuddar- sub 2</a></li>
-                    </ul>
-
-                </li>
-                <li class="show-sub-category ">
-                    <a href="javascript:void(0) ">Poster</a>
-
-                    <ul class="list-of-sub dn ">
-                        <li><a href="# "> Poster- sub 1</a></li>
-                        <li><a href="# "> Poster- sub 2</a></li>
-                    </ul>
-
-                </li>
-                <li class="show-sub-category ">
-                    <a href="javascript:void(0) ">Mattor</a>
-
-                    <ul class="list-of-sub dn ">
-                        <li><a href="# "> Mattor - sub 1</a></li>
-                        <li><a href="# "> Mattor - sub 2</a></li>
-                    </ul>
-
-                </li>
-
-                <li class="show-sub-category ">
-                    <a href="javascript:void(0) ">Dekorationer</a>
-
-                    <ul class="list-of-sub dn ">
-                        <li><a href="# "> Dekorationer- sub 1</a></li>
-                        <li><a href="# "> Dekorationer- sub 2</a></li>
-                    </ul>
-
-                </li>
-            </ul>
-        </div>
 
         <!-- contact form -->
         <div class="contact-form">
             <h3 class="con-us-title">Kontakta oss</h3>
-            <p>Fields with <span class="required">*</span> are required</p>
             <form>
-                <input class="form-control" type="text" placeholder="E-mail">
-                <textarea class="form-control" placeholder="Message"></textarea>
-                <input class="form-control" type="submit" value="Submit">
+
+                <label for="fname">Förnamn</label>
+                <input class="form-control" type="text" id="fname" name="firstname">
+
+                <label for="lname">Efternamn</label>
+                <input class="form-control" type="text" id="lname" name="lastname">
+                <label for="inputEmail">Email</label>
+                <input class="form-control" type="email" id="inputEmail">
+                <label for="country">Land</label>
+                <select class="form-control" id="country" name="country">
+                  <option value="sweden">Sverige</option>
+                  <option value="norway">Norge</option>
+                  <option value="danmark">Danmark</option>
+                </select>
+
+                <label for="subject">Meddelande</label>
+                <textarea class="form-control" id="subject" name="subject" placeholder="Skriv här (max 150 tecken)" style="height:200px"></textarea>
+
+                <input class="form-control" type="submit" value="SKICKA">
+
+
             </form>
         </div>
 
