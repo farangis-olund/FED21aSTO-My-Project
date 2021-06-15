@@ -11,12 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Play&family=Salsa&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-
-    <link rel="stylesheet" type="text/css" href="css/font-style.css">
-
     <link rel="stylesheet" type="text/css" href="css/myStyle.css">
-    <link rel="stylesheet" type="text/css" href="css/aboutStyle.css">
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
@@ -40,9 +35,7 @@
 
                 <li class="menu-item-2 header-content-flex ">
                     <div class="logo">
-                        <a href="home.html">
-                            <p class="first-part">R<span id="second-part">&</span>D deko®</p>
-                        </a>
+                        <p class="first-part">R<span id="second-part">&</span>D deko®</p>
 
                     </div>
                 </li>
@@ -57,9 +50,10 @@
                     </form>
                 </li>
             </ul>
-
         </header>
 
+
+        <script src="js/main.js "></script>
 
         <!-- main category for product -->
 
@@ -103,25 +97,51 @@
 
                 </li>
             </ul>
-
         </div>
-        <!-- about us block -->
 
-        <div class='container-about container-about-flex'>
-            <section class="img-about about-flex-item">
-                <img src='assets/img/family.jpg' class='iconDetails' alt="family">
-            </section>
-            <section class="about-text about-flex-item">
-                <h4>Om oss</h4>
-                <p class="about-flex-item"> På R&D Hem Deko® grundas av en familj Rebecka och David Andersson. De tog båda examen från The Interior Design School of London och de har genom åren fått den erfarenhet som krävs för att de ska bli en viktig kraft att räknas med i branschen
-                    i Sverige och över hela världen.</p>
-                <p>R&D Hem Deko® är en webbutik för heminredning baserat i Sverige. Det är en butik som säljer unika produkter som hör till dekor, (textilier, prydnader, kuddar, gardiner, etc) inte bara på den svenska marknaden utan också på den globala
-                    marknaden. R&D Hem Deko® kommer att vara involverad i alla typer av tygdesigner för heminredning som örngott, bordsdukar, gardiner och andra typer av tyg för heminredning, kommersiell (hotell och loger) inredning, försäljning av varor,
-                    konsulttjänster för heminredning och andra relaterade tjänster.
-                </p>
-                <p>På R&D Hem Deko® kommer vår kunds bästa att komma först och allt vi gör kommer att styras av våra värderingar och yrkesetik. Vi kommer att se till att vi ansvarar enligt högsta standard genom att uppfylla våra kunders behov exakt och fullständigt.</p>
-            </section>
+        <!-- contact form -->
+        <div class="contact-form">
+            <h1 class="con-us-title">Contact Us</h1>
+            <form>
+                <input class="form-control" type="text" placeholder="E-mail">
+                <textarea class="form-control" placeholder="Message"></textarea>
+                <input class="form-control" type="submit" value="Submit">
+            </form>
         </div>
+
+
+        <style type="text/css">
+            .contact-form {
+                grid-area: contact-form;
+                width: 100%;
+            }
+            
+            .con-us-title {
+                text-align: center;
+            }
+            
+            .form-control {
+                border: 1px solid #ddd;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+            
+            form {
+                text-align: center;
+                margin: 20px auto;
+                width: 320px;
+            }
+            
+            form input[type='text'],
+            textarea {
+                width: 100%;
+            }
+        </style>
+
+        <!-- end contact form -->
+
+
 
 
         <!-- footer part -->
@@ -145,12 +165,11 @@
             </section>
             <section class="footer3 ">
                 <h3>Hjälp</h3> <br>
-                <div><a href="about.html">Om oss</a></div>
-                <div><a href="#">Kontakta oss</a></div>
+                <div><a href="# ">Om oss</a></div>
+                <div><a href="# ">Kontakta oss</a></div>
             </section>
-            <script src="js/main.js "></script>
-        </footer>
 
+        </footer>
     </div>
 
 </body>

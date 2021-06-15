@@ -10,7 +10,7 @@ $(document).on("click", ".show-sub-category", function() {
 // carousel script
 
 var slideIndex = 0;
-showSlides();
+
 
 function showSlides() {
     var i;
