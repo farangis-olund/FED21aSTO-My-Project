@@ -1,3 +1,4 @@
+@import url(aboutStyle.css);
 .iconDetails {
     max-width: 100%;
     max-height: 450px;
@@ -7,7 +8,7 @@
 .container-about {
     grid-area: container-about;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
 }
 
 .container-about-flex {
