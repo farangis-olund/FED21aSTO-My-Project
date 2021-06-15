@@ -13,7 +13,6 @@
        }
        
        body {
-           background: url(../img/12_col.gif) center top repeat-y;
            background-size: 90%;
            background-color: rgb(252, 248, 247);
        }
@@ -219,6 +218,7 @@
            border-radius: 10px;
            border: 1px solid #ddd;
            outline: none;
+           font-size: 14px;
        }
        
        img {

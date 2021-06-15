@@ -52,4 +52,5 @@ a:hover {
 input,
 textarea {
     font-family: 'Play', sans-serif;
+    font-size: 12px;
 }
