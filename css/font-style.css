@@ -48,3 +48,9 @@ p {
 a:hover {
     text-decoration: underline;
 }
+
+.required {
+    color: red;
+    font-size: 1.2em;
+    font-weight: 600;
+}
