@@ -38,6 +38,52 @@ textarea {
     grid-template-areas: "header header header" "contact-form contact-form contact-form" "footer footer footer";
 }
 
+.menu-item-1 {
+    display: none !important;
+}
+
+.menu-line {
+    display: inline-block !important;
+    float: left;
+}
+
+.menu-item-2 {
+    /* float: left;
+    width: 50%; */
+    text-align: center;
+}
+
+.menu-item-3 {
+    float: left;
+    /* width: 100%; */
+}
+
+.main-category {
+    float: left;
+    position: absolute;
+    top: 31;
+    left: -2000px;
+    width: 70%;
+    background-color: #fff;
+    height: 100%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.category>li {
+    display: block;
+    text-align: left;
+}
+
+.list-of-sub {
+    position: initial;
+    width: 100%;
+}
+
+.list-of-sub>li {
+    display: block;
+}
+
 @media screen and (max-width: 960px) {}
 
 
