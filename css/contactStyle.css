@@ -35,7 +35,7 @@ textarea {
 .container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "header header header" "contact-form contact-form contact-form" "footer footer footer";
+    grid-template-areas: "header header header" "main-category main-category main-category" "contact-form contact-form contact-form" "footer footer footer";
 }
 
 .menu-item-1 {
@@ -105,6 +105,6 @@ textarea {
     .container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: "header" "contact-form" "footer";
+        grid-template-areas: "header" "main-category" "contact-form" "footer";
     }
 }
